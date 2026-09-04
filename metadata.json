@@ -1,0 +1,6 @@
+{
+  "name": "Outfit & Fashion Stylist",
+  "description": "Asistente inteligente de moda y estilismo que analiza fotos de outfits y ofrece recomendaciones personalizadas según las últimas tendencias.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

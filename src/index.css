@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at 10% 20%, #FFF5F7 0%, #FAF8F5 45%, #F5F3FF 100%);
+    color: #18181B;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Haute Couture Vibrant Gradients & Accents */
+.bg-gradient-runway {
+  background: linear-gradient(135deg, #E11D48 0%, #D97706 50%, #4F46E5 100%);
+}
+
+.bg-gradient-chic {
+  background: linear-gradient(135deg, #BE123C 0%, #E11D48 40%, #F59E0B 100%);
+}
+
+.bg-gradient-noir {
+  background: linear-gradient(135deg, #18181B 0%, #27272A 70%, #3F3F46 100%);
+}
+
+.text-gradient-runway {
+  background: linear-gradient(135deg, #E11D48 0%, #D97706 45%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fashion-card-glow {
+  box-shadow: 0 10px 30px -5px rgba(225, 29, 72, 0.08), 0 4px 12px -2px rgba(245, 158, 11, 0.06);
+}
+
+.editorial-border {
+  border: 1px solid rgba(225, 29, 72, 0.12);
+}
+
+.editorial-shadow {
+  box-shadow: 0 12px 35px -8px rgba(24, 24, 27, 0.07), 0 4px 12px -2px rgba(225, 29, 72, 0.04);
+}
+
+.editorial-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(225, 29, 72, 0.15), 0 8px 16px -4px rgba(24, 24, 27, 0.06);
+  border-color: rgba(225, 29, 72, 0.3);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2D9CF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E11D48;
+}
